@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webMCP - Model Context Protocol Resource</title>
+    <style>
+        /* style.css (Inline CSS) */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+             z-index: 1000;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 20px;
+        }
+        header nav a:hover {
+            color: #007bff;
+        }
+        .logo {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        h1, h2 {
+            color: #222;
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-top: 40px;
+        }
+
+        .hero {
+            background-color: #e9f2ff;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero .button-group {
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button.primary {
+            background-color: #007bff;
+            color: white;
+        }
+        .button.secondary {
+            background-color: #fff;
+            color: #007bff;
+            border: 1px solid #007bff;
+        }
+        .button.primary:hover, .button.secondary:hover {
+            opacity: 0.8;
+        }
+
+        #what-is-mcp, #why-mcp {
+             padding: 60px 0;
+        }
+        .key-features {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          margin-top: 30px;
+        }
+        .key-features .feature {
+            text-align: center;
+            width: 200px;
+            margin-bottom: 20px;
+        }
+        .key-features .feature img {
+            max-width: 70px;
+        }
+
+        .benefits {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .benefits .benefit {
+           width: 300px;
+           padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+         .benefits .benefit img {
+             max-width: 150px;
+         }
+
+        #quickstart {
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 60px 0;
+        }
+        #quickstart ol {
+            max-width: 600px;
+            margin: 20px auto;
+             text-align: left;
+        }
+        #quickstart ol li {
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        .doc-list, .community-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+             flex-wrap: wrap;
+             justify-content: space-around;
+        }
+
+        .doc-list li, .community-list li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #fff;
+             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .doc-list li a, .community-list li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        footer {
+          background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            header .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            header nav {
+                margin-top: 10px;
+            }
+            header nav a {
+                margin-left: 0;
+               margin-right: 15px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">webMCP.org</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#documentation">Documentation</a>
+                <a href="#community">Community</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Unlocking Model Context: Your Guide to the Model Context Protocol</h1>
+            <p>Build powerful, context-aware applications with a standardized protocol for model data exchange.</p>
+             <div class="button-group">
+                 <a href="#quickstart" class="button primary">Get Started</a>
+                 <a href="#documentation" class="button secondary">Explore Documentation</a>
+             </div>
+        </div>
+    </section>
+
+    <section id="what-is-mcp">
+        <div class="container">
+            <h2>What is the Model Context Protocol?</h2>
+             <p>MCP is a protocol that does ....</p>
+             <div class="key-features">
+                <div class="feature">
+                    <img src="icon-standard.png" alt="Standardized"/>
+                     <h3>Standardized Data Exchange</h3>
+                </div>
+                 <div class="feature">
+                     <img src="icon-context.png" alt="Context"/>
+                    <h3>Contextual Awareness</h3>
+                </div>
+                 <div class="feature">
+                     <img src="icon-interop.png" alt="Interop"/>
+                     <h3>Interoperability</h3>
+                 </div>
+                <div class="feature">
+                  <img src="icon-flexibility.png" alt="Flexibility"/>
+                  <h3>Flexibility</h3>
+                </div>
+             </div>
+        </div>
+    </section>
+        <section id="why-mcp">
+        <div class="container">
+            <h2>Why Use MCP?</h2>
+           <div class="benefits">
+                <div class="benefit">
+                  <img src="streamline-integration.jpg" alt="Streamline Integration" />
+                  <h3>Streamline Model Integration</h3>
+                  <p>Description of how it streamline integration</p>
+              </div>
+                <div class="benefit">
+                    <img src="context-aware.png" alt="Context-Aware" />
+                    <h3>Enhance Application Context</h3>
+                    <p>Description of enhancing context.</p>
+              </div>
+                <div class="benefit">
+                  <img src="interoperability.png" alt="Interoperability"/>
+                    <h3>Foster Interoperability</h3>
+                    <p>Description of Interoperability</p>
+                </div>
+           </div>
+
+        </div>
+    </section>
+
+     <section id="quickstart">
+         <div class="container">
+             <h2>Jump Right In: Quickstart Guide</h2>
+              <ol>
+                   <li> Step 1 </li>
+                  <li> Step 2</li>
+                  <li> Step 3</li>
+              </ol>
+             <a href="#" class="button primary">View Quickstart Guide</a>
+         </div>
+     </section>
+
+    <section id="documentation">
+        <div class="container">
+            <h2>Explore the Details</h2>
+                <ul class="doc-list">
+                    <li><a href="#">Full Protocol Specification</a></li>
+                    <li><a href="#">API Documentation</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Examples</a></li>
+                    <li><a href="#">Use Cases</a></li>
+                </ul>
+        </div>
+    </section>
+
+     <section id="community">
+         <div class="container">
+             <h2>Join the MCP Community</h2>
+             <ul class="community-list">
+                <li> <a href="#">Forum/Discussion Board</a></li>
+                <li> <a href="#">Github Repository</a></li>
+                  <li> <a href="#">Contact Us</a></li>
+             </ul>
+         </div>
+     </section>
+
+   <footer>
+       <div class="container">
+           <p>© 2024 webmcp.org. All rights reserved.</p>
+       </div>
+   </footer>
+
+    <script>
+        // You can add JavaScript functionality here if needed.
+        // For example smooth scrolling:
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+           anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+
+               document.querySelector(this.getAttribute('href')).scrollIntoView({
+                   behavior: 'smooth'
+               });
+           });
+        });
+    </script>
+</body>
+</html>
